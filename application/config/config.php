@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/CodeIgniter_2.1.4';
+$config['base_url']	= 'http://localhost/MeganetLocalWEB';
 
 // LIBRERIAS DEL PROYECTO
 
@@ -59,7 +59,7 @@ $config['uri_protocol']	= 'AUTO';
 | http://codeigniter.com/user_guide/general/urls.html
 */
 
-$config['url_suffix'] = 'html';
+$config['url_suffix'] = '';
 
 /*
 |--------------------------------------------------------------------------

@@ -38,8 +38,17 @@
 |
 */
 
-$route['default_controller'] = "Welcome";
+$route['default_controller'] = "Inicio/index";
 $route['404_override'] = '';
+$route['Products'] = "Products_controller/index";
+$route['Services'] = "Services_controller/index";
+$route['QualityNatureCertificates'] = "QualityCertificates_controller/index";
+$route['Prizes'] = "Prizes_controller/index";
+$route['Contact'] = "Contact_controller/index";
+$route['AboutUs'] = "About_us_controller/index";
+
+//$route['Products(/:any)'] = "Products_controllerhtml";
+
 
 
 /* End of file routes.php */

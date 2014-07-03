@@ -1,0 +1,148 @@
+@media (min-width: 1200px) {
+
+html, body {	padding: 1.1em; 
+				height: 85%;  
+				padding-top: 60px;  }
+
+
+.text-center-only {	text-align: center;	}
+
+.marginBottom {  margin-bottom: 1.1em;}
+
+
+.history-text-images-box {
+	position: relative;
+	text-align: justify;
+
+}
+
+.history-text-box {
+	padding-top: 1.1em;
+}
+
+.history-image-left {
+	float: left;
+	padding: 10px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	height: auto;
+	max-width: 100%;
+	width: 30%;
+}
+
+.history-image-right {
+	float: right;
+	padding: 10px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	height: auto;
+	max-width: 100%;
+	width: 40%;
+}
+
+.image-team {
+	height: 100%;
+	width: 100%;
+}
+
+.enter-complete {
+		clear: both;
+}
+
+/*******************
+	TEAM GROUP
+********************/
+.full-team-image-box
+{
+	position: relative;
+	overflow: hidden;
+	height: auto;
+	width: auto;
+}
+
+.full-team-image-box:hover .caption
+{
+	opacity: 1;
+	transform: translateY(-180px);
+	-webkit-transform:translateY(-180px) ;
+	-moz-transform:translateY(-180px) ;
+	-ms-transform:translateY(-180px) ;
+	-o-transform:translateY(-180px) ;
+}
+
+.full-team-image-box .caption
+{
+	position: absolute;
+	height: auto;
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	-ms-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+	width: 100%;
+}
+
+.full-team-image-box .blur{
+	background-color: rgba(232,165,78,0.9);
+	height: 300px;
+	position: absolute;
+	width: 100%;
+
+}
+.full-team-image-box .caption-text{
+	color: #ffffff;
+	position: absolute;
+	height: 300px;
+	text-align: center;
+	margin-top: -20px;
+	width: 100%;
+}
+
+.caption {
+	visibility: visible;
+}
+
+.caption-reduced {
+	display: none;
+}
+
+.name-person {
+	border-top:2px solid white; 
+	border-bottom:2px solid white; 
+	padding:10px;
+}
+
+.contact-icon {
+	margin-right: 5px;
+	margin-left: 5px;
+
+}
+
+button {
+  display: block;
+  background-color: #f7f7f7;
+  background-image: url('./assets/imgs/icons/email_icon.png');
+
+  color: #a7a7a7;
+
+
+
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+}
+/***************************
+	NAVBAR
+************************/
+@import url("__main_menu.less");
+
+/***************************
+	FOOTER
+************************/
+@import url("__footer.less");
+
+
+}
