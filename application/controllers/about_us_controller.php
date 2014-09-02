@@ -9,3 +9,5 @@ class About_us_controller extends CI_Controller {
 		$this->load->view('about_us.php');
 	}
 }
+
+?>

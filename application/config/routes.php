@@ -46,10 +46,15 @@ $route['QualityNatureCertificates'] = "QualityCertificates_controller/index";
 $route['Prizes'] = "Prizes_controller/index";
 $route['Contact'] = "Contact_controller/index";
 $route['AboutUs'] = "About_us_controller/index";
+$route['CountersCommunications'] = "Counters_controller/index";
+$route['IncidenceReports'] = "Incidence_reports_controller/index";
+$route['Associations'] = "Associations_controller/index";
+$route['GalileoSystem'] = "Galileo_system_controller/index";
+$route['GymkhanaVIIGallery'] = "Gymkhana_VII_controller/index";
+$route['SonosSystem'] = "Sonos_system_controller/index";
+$route['Promotions'] = "Promotions_controller/index";
 
 //$route['Products(/:any)'] = "Products_controllerhtml";
-
-
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

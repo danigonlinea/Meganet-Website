@@ -1,30 +1,78 @@
+@blue-color-primary: #023C88;
+@blue-color-secondary: #0356C2;
+@orange-color-primary: #EF4E20;
+
+
 @media (min-width: 1100px) {
 
 html, body {	padding: 1.1em; 
 				height: 85%;
 				padding-top: 60px;   }
 
-
 .text-center-only {	text-align: center;	}
-
 .enterprise-container {	width: 100%;  padding: 1.2em;}
 .marginBottom {  margin-bottom: 1.1em;}
 
-/*** ICONOS, TITLE Y SUBTITULO ***/
+
+ span {
+	font-size: 16px;
+	color: white;
+}
+
+h1 {font-size:44px;}
+h2 {font-size:22px;}
+
+/******************************
+	DESCUENTOS
+*******************************/
+
 .min-height-box{
 	height: 200px;
+	text-align: center;
 }
 
 
+.certificate_icon_container {
+	text-align: center;
+}
+
+
+.certificate-icon-box{
+	height: 150px;
+	width: 150px;
+
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+/******************************
+	PANEL DE RESALTE DE MENSAJE
+*******************************/
+.well-primary {
+	background: rgba(2, 60, 136, 0.9);
+	border-color: @blue-color-secondary;
+	color: white;
+}
+
+/*** ICONOS, TITLE Y SUBTITULO ***/
+.min-height-box{	height: 200px; }
+.modal {    overflow-y: auto; }
 
 /***************************
 	NAVBAR
 ************************/
-@import url("__main_menu.less");
+@import url("NavBar/__main_menu.less");
+
+/***************************
+	BUTTON CAROUSEL ORANGE LINKS
+************************/
+@import url("__button_orange.less");
+
 
 /***************************
 	FOOTER
 ************************/
-@import url("__footer.less");
+@import url("footer/__footer.less");
 
 }

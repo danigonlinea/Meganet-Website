@@ -1,27 +1,64 @@
 /* Large desktop is defined in general.css*/
- /******************************************************************************************************************/
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 1201px) {
+ /******************************************************************************************************************//* Portrait tablet to landscape and desktop */
+@font-size-span: 16px;
+@blue-color-primary: #023C88;
+@blue-color-secondary: #0356C2;
+@orange-color-primary: #EF4E20;
+
+@media (min-width: 768px) and (max-width: 1099px) {
+
 
 html, body {	padding: 1.1em; 
 				height: 85%;  
 				padding-top: 60px;  }
 
-
 .text-center-only {	text-align: center;	}
-
 .marginBottom {  margin-bottom: 1.1em;}
 
 
+p, span {	font-size: 16px;
+			color: white;}
+
+h1, .jumbotron h1 {font-size:44px;}
+h3{font-size:18px;}
+h4{font-size:16px;}
+
+.jumbotron {
+	background: url('../imgs/general/historia.jpg') no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 380px;
+    text-align: justify;
+}
+
+.jumbotron h1 {
+	color: white;
+}
+.jumbotron h2 {
+	color: white;
+}
+
+/******************************
+	PANEL DE RESALTE DE MENSAJE
+*******************************/
+.well-primary {
+	background: rgba(2, 60, 136, 0.9);
+	border-color: @blue-color-secondary;
+	color: white;
+}
+
+
+/******************
+	HISTORIA
+	****************/
 .history-text-images-box {
 	position: relative;
 	text-align: justify;
-
 }
 
-.history-text-box {
-	padding-top: 1.1em;
-}
+.history-text-box {	padding-top: 1.1em; }
 
 .history-image-left {
 	float: left;
@@ -47,15 +84,148 @@ html, body {	padding: 1.1em;
 	width: 40%;
 }
 
-.enter-complete {
-		clear: both;
-}
+.enter-complete {clear: both;}
 
 /*******************
 	TEAM GROUP
 ********************/
+.full-team-image-box
+{
+	position: relative;
+	overflow: hidden;
+	height: auto;
+	width: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.caption {	display: none; }
+.caption-reduced {	visibility: visible;}
+
+.image-team {
+	height: auto;
+	width: 100%;
+}
+
+.name-person {
+	border-top:2px solid white; 
+	border-bottom:2px solid white; 
+	padding:10px;
+}
+
+.contact-icon {
+	margin-right: 5px;
+	margin-left: 5px;
+	vertical-align:middle;
+}
+
+.caption-reduced {
+	color: #ffffff;
+	height: 180px;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(232,165,78,1);
+	margin-top: -20px;
+}
+
+	/***************************
+		NAVBAR
+	************************/
+	@import url("NavBar/__main_menu.less");
+
+	.navbar-up {
+		height: 160px !important;
+	}
+	.navbar-down {
+		height: 120px !important;
+	}
+
+	/***************************
+	CAROUSEL
+************************/
+@import url("__carousel.less");
+
+	/***************************
+		FOOTER
+		************************/
+	@import url("footer/__footer.less");
 
 
+}
+/******************************************************************************************************************/
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767px) { 
+
+
+html, body {	padding-top: 40px; 
+				height: 70%;
+		   }
+
+div span {	font-size: @font-size-span; }
+
+
+.text-center-only {	text-align: center;	}
+.marginBottom {  margin-bottom: 1.1em; }
+p, span {	font-size: 16px;
+			color: white;}
+
+h1, .jumbotron h1 {font-size:44px;}
+h3{font-size:18px;}
+h4{font-size:16px;}
+
+.jumbotron {
+	background: url('../imgs/general/historia.jpg') no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 380px;
+    text-align: justify;
+}
+
+.jumbotron h1 {
+	color: white;
+}
+.jumbotron h2 {
+	color: white;
+}
+
+/******************************
+	PANEL DE RESALTE DE MENSAJE
+*******************************/
+.well-primary {
+	background: rgba(2, 60, 136, 0.9);
+	border-color: @blue-color-secondary;
+	color: white;
+}
+
+/******************
+	HISTORIA
+	****************/
+.history-text-images-box {
+	position: relative;
+	text-align: justify;
+}
+
+.history-text-box {
+	padding-top: 1.1em;
+}
+
+.history-image-left {
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+.history-image-right {
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+.enter-complete {clear: both;}
+
+// TEAM GROUP
 
 .full-team-image-box
 {
@@ -63,14 +233,13 @@ html, body {	padding: 1.1em;
 	overflow: hidden;
 	height: auto;
 	width: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+
 }
 
-.caption {
-	display: none;
-}
-
+.caption {	display: none;}
 .caption-reduced {
-
 	visibility: visible;
 }
 
@@ -88,6 +257,7 @@ html, body {	padding: 1.1em;
 .contact-icon {
 	margin-right: 5px;
 	margin-left: 5px;
+	vertical-align:middle;
 }
 
 .caption-reduced {
@@ -99,38 +269,426 @@ html, body {	padding: 1.1em;
 	margin-top: -20px;
 }
 
-.contact-icon-group-reduced {
+/************************
+    NAVBAR
+************************/
+.navbar{
+    padding: 15px;
+    height: 110px;
+    font-size: 14px;
+    padding-top: 15px;
+    background: rgba(255, 255, 255, 0.0);
+    border-bottom: 0px solid #ffffff; 
+}
 
+.navbar-up {
+    padding: 15px;
+    height: 110px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.0);
+    
+    -webkit-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    -ms-transition:all 1s ease-out;
+    transition:all 0s ease-outs;
+}
+
+.navbar-down {
+    height: 70px;
+    font-size: 14px;
+    padding: 15px;
+    padding-top: 0px;
+    background-color: rgba(232,165,78,0.7);
+    border-bottom: 0px solid #ffffff; 
+
+    -webkit-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    -ms-transition:all 1s ease-out;
+    transition:all 1s ease-outs;
+}
+
+.navbar-menu-toggle {
+    display: none;
+    width: 100%;
+
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.navbar-menu-toggle ul {
+    position: relative;
+    list-style: none;
+    text-decoration:none;
+    float: right;
+    clear: both;
+    background-color: @blue-color-primary;
+    border: 5px solid @orange-color-primary;
+    border-radius: 25px;
+    padding-right: 40px;
+}
+
+.navbar-menu-toggle ul li {
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.navbar-menu-toggle ul li a{
+    color: white;
+    text-decoration: none;
+
+    padding: 25px 30px 25px 30px;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.navbar-menu-toggle ul li a:hover{
+    color: @orange-color-primary;
+}
+
+.complete-menu {
+    width: 100%;
+    position: absolute;
+    line-height: 60px;
+}
+
+.navbar-logo {
+    position: relative;
+      float: left;
 }
 
 
-/***************************
-	NAVBAR
-************************/
-@import url("__main_menu.less");
+.navbar-button-toggle {
+    visibility: visible;
+    position: relative;
+    margin-right: 40px;
+    background:none;
+    border:none; 
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+/**************
+	TITULOS JUMBOTRON
+	*********************/
+
+.carousel-title {
+		text-shadow: 2px 0 0 @orange-color-primary, -2px 0 0 @orange-color-primary, 
+				 0 2px 0 @orange-color-primary, 0 -2px 0 @orange-color-primary, 
+				 1px 1px @orange-color-primary, -1px -1px 0 @orange-color-primary,
+				 1px -1px 0 @orange-color-primary, -1px 1px 0 @orange-color-primary;
+}
+
+.carousel-subtitle {
+		text-shadow: 2px 0 0 @orange-color-primary, -2px 0 0 @orange-color-primary, 
+				 0 2px 0 @orange-color-primary, 0 -2px 0 @orange-color-primary, 
+				 1px 1px @orange-color-primary, -1px -1px 0 @orange-color-primary,
+				 1px -1px 0 @orange-color-primary, -1px 1px 0 @orange-color-primary;
+	
+}
 
 /***************************
 	FOOTER
-************************/
-@import url("__footer.less");
+	************************/
+.footer-social-icons
+{
+	height: 8em;
+	padding: 2em;
+	vertical-align:middle;
 
 
 }
- /******************************************************************************************************************/
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
 
+.footer-contact
+{
+	height: 8em;
+	text-align: right;
+}
 
- 
- }
- /******************************************************************************************************************/
+.row-footer
+{
+	height: 27em;
+	padding: 1.1em;
+	background-color:@blue-color-primary;
+	font-family: Tahoma;/*'Palatino Linotype',Tahoma, 'Lucida Sans Unicode',Georgia, sans-serif;*/
+	font-size: 1.5em;
+}
+
+div span a:hover {
+	color: @orange-color-primary;
+    text-decoration: none;
+}
+
+}
+/******************************************************************************************************************/
 /* Landscape phones and down */
-@media (max-width: 480px) { 
+@media (max-width: 480px) 
+{ 
 
-html, body {	padding: 1.01em; 
+html, body {	
 				height: 65%;
 				padding-top: 40px;   }
 
+
+div span {	font-size: @font-size-span;}
+.text-center-only {	text-align: center;	}
+.marginBottom {  margin-bottom: 1.1em;}
+p, span {	font-size: 16px;
+			color: white;}
+
+h1, .jumbotron h1 {font-size:44px;}
+h3{font-size:18px;}
+h4{font-size:16px;}
+
+.jumbotron {
+	background: url('../imgs/general/historia.jpg') no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 300px;
+    text-align: justify;
+}
+
+.jumbotron h1 {
+	color: white;
+}
+.jumbotron h2 {
+	color: white;
+}
+
+/******************************
+	PANEL DE RESALTE DE MENSAJE
+*******************************/
+.well-primary {
+	background: rgba(2, 60, 136, 0.9);
+	border-color: @blue-color-secondary;
+	color: white;
+}
+
+/*****************
+	HISTORIA 
+	******************/
+
+.history-text-images-box {	text-align: justify; }
+
+.history-text-box {
+	padding-top: 1.1em;
+}
+
+.history-image-left {
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+.history-image-right {
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+.enter-complete {	clear: both;}
+
+
+/*******************
+	TEAM GROUP
+********************/
+.full-team-image-box
+{
+	position: relative;
+	overflow: hidden;
+	height: auto;
+	width: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.caption {	display: none;}
+.caption-reduced {	visibility: visible;}
+
+.image-team {
+	height: auto;
+	width: 100%;
+}
+
+.name-person {
+	border-top:2px solid white; 
+	border-bottom:2px solid white; 
+	padding:10px;
+}
+
+.contact-icon {
+	margin-right: 5px;
+	margin-left: 5px;
+	vertical-align:middle;
+}
+
+.caption-reduced {
+	color: #ffffff;
+	height: 180px;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(232,165,78,1);
+	margin-top: -20px;
+}
+
+
+/************************
+    NAVBAR
+************************/
+.navbar{
+    padding: 15px;
+    height: 110px;
+    font-size: 14px;
+    padding-top: 15px;
+    background: rgba(255, 255, 255, 0.0);
+    border-bottom: 0px solid #ffffff; 
+}
+
+.navbar-up {
+    padding: 15px;
+    height: 110px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.0);
+    
+    -webkit-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    -ms-transition:all 1s ease-out;
+    transition:all 0s ease-outs;
+}
+
+.navbar-down {
+    height: 70px;
+    font-size: 14px;
+    padding: 15px;
+    padding-top: 0px;
+    background-color: rgba(232,165,78,0.7);
+    border-bottom: 0px solid #ffffff; 
+
+    -webkit-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    -ms-transition:all 1s ease-out;
+    transition:all 1s ease-outs;
+}
+
+.navbar-menu-toggle {
+    display: none;
+    width: 100%;
+
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.navbar-menu-toggle ul {
+    position: relative;
+    list-style: none;
+    text-decoration:none;
+    float: right;
+    clear: both;
+    background-color: @blue-color-primary;
+    border: 5px solid @orange-color-primary;
+    border-radius: 25px;
+    padding-right: 40px;
+}
+
+.navbar-menu-toggle ul li {
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.navbar-menu-toggle ul li a{
+    color: white;
+    text-decoration: none;
+
+    padding: 25px 30px 25px 30px;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.navbar-menu-toggle ul li a:hover{
+    color: @orange-color-primary;
+}
+
+.complete-menu {
+    width: 100%;
+    position: absolute;
+    line-height: 60px;
+}
+
+.navbar-logo {
+    position: relative;
+      float: left;
+}
+
+
+.navbar-button-toggle {
+    visibility: visible;
+    position: relative;
+    margin-right: 40px;
+    background:none;
+    border:none; 
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+/**************
+	TITULOS JUMBOTRON
+	*********************/
+
+.carousel-title {
+		text-shadow: 2px 0 0 @orange-color-primary, -2px 0 0 @orange-color-primary, 
+				 0 2px 0 @orange-color-primary, 0 -2px 0 @orange-color-primary, 
+				 1px 1px @orange-color-primary, -1px -1px 0 @orange-color-primary,
+				 1px -1px 0 @orange-color-primary, -1px 1px 0 @orange-color-primary;
+}
+
+.carousel-subtitle {
+		text-shadow: 2px 0 0 @orange-color-primary, -2px 0 0 @orange-color-primary, 
+				 0 2px 0 @orange-color-primary, 0 -2px 0 @orange-color-primary, 
+				 1px 1px @orange-color-primary, -1px -1px 0 @orange-color-primary,
+				 1px -1px 0 @orange-color-primary, -1px 1px 0 @orange-color-primary;
+	
+}
+
+/***************************
+	FOOTER
+	************************/
+.footer-social-icons
+{
+	height: 8em;
+	padding: 2em;
+	vertical-align:middle;
+}
+
+.footer-contact
+{
+	height: 8em;
+	text-align: right;
+}
+
+.row-footer
+{
+	height: 28em;
+	padding: 1.1em;
+	background-color:@blue-color-primary;
+	font-family: Tahoma;/*'Palatino Linotype',Tahoma, 'Lucida Sans Unicode',Georgia, sans-serif;*/
+	font-size: 1.5em;
+}
+
+div span a:hover {
+	color: @orange-color-primary;
+    text-decoration: none;
+}
 
 
 }

@@ -9,3 +9,5 @@ class Services_controller extends CI_Controller {
 		$this->load->view('services.php');
 	}
 }
+
+?> 

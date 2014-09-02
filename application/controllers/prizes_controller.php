@@ -9,3 +9,5 @@ class Prizes_controller extends CI_Controller {
 		$this->load->view('prizes.php');
 	}
 }
+
+?>

@@ -1,54 +1,38 @@
 /* Large desktop is defined in general.css*/
- /******************************************************************************************************************/
+ /************************************************************************************111111111111111111111***************/
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 1099px) {
 
-html, body {	
-				height: 75%;
-				padding-top: 60px;    }
+html, body {	padding: 1.01em; 
+				height: 75%;    }
+
+.marginButtons {  margin: 10px; }
+
 
 
 .text-center-only {	text-align: center;	}
 
 .enterprise-container {	width: 100%;  padding: 1.2em;}
 
-/***************************
-	NAVBAR
-	************************/
-.navbar{
-	padding: 15px;
-	height: 140px;
-	font-size: 14px;
-	background: rgba(255, 255, 255, 0.0);
-	/* Transiciones para cada navegador */
-    -webkit-transition:all 1s ease-in;  /* Chrome y Safari */
-    -o-transition:all 1s ease-in;  /* Opera */
-    -moz-transition:all 1s ease-in;  /* Mozilla Firefox */
-    -ms-transition:all 1s ease-in;   /* Internet Explorer */
-    transition:all 1s ease-in;  /* W3C */
-}
 
-.navbar.navbar-sticky-scroll {
-	-webkit-transition:all 1s ease-out;  /* Chrome y Safari */
-    -o-transition:all 1s ease-out;  /* Opera */
-    -moz-transition:all 1s ease-out;  /* Mozilla Firefox */
-    -ms-transition:all 1s ease-out;   /* Internet Explorer */
-    transition:all 1s ease-out;  /* W3C */
-
-    background: rgba(255, 255, 255, 0.8);
-    border-bottom: 1px solid #ffffff; 
-    height: 120px;
-    font-size: 14px;
-}
-
-.navbar .nav > li > a{
-	color: black;
+/* Buttons Actions */
+.btn-resize {
+    padding: 10px 20px;
+    font-size: 30px; 
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
 }
 
 
 /***************************
 	CAROUSEL
 	************************/
+
+.carousel-title{ font-weight: bold;	font-size: 300% !important;}
+.carousel-subtitle{	font-size: 200% !important;}
+
 .carousel,
 .item,
 .active {
@@ -66,41 +50,6 @@ html, body {
 	background-size: cover;
 }
 
-/***************************
-	NAVBAR
-************************/
-.navbar{
-	padding: 5px 0 0 5px;
-	height: 90px;
-	background: rgba(195, 224, 255, 0.0);
-	/* Aqui colocamos la transicion para cada navegador */
-    -webkit-transition:all 1s ease-in;  /* Chrome y Safari */
-    -o-transition:all 1s ease-in;  /* Opera */
-    -moz-transition:all 1s ease-in;  /* Mozilla Firefox */
-    -ms-transition:all 1s ease-in;   /* Internet Explorer */
-    transition:all 1s ease-in;  /* W3C */
-  
-}
-.navbar.navbar-sticky-scroll {
-	-webkit-transition:all 1s ease-out;  /* Chrome y Safari */
-    -o-transition:all 1s ease-out;  /* Opera */
-    -moz-transition:all 1s ease-out;  /* Mozilla Firefox */
-    -ms-transition:all 1s ease-out;   /* Internet Explorer */
-    transition:all 1s ease-out;  /* W3C */
-
-    background: rgba(195, 224, 255, 0.8);
-    border-bottom: 1px solid #ffffff; 
-    height: 70px;
-    font-size: 14px;
-}
-   
-.navbar .navbar-toggle {
-	background-color: white;
-}
-
-.navbar .nav > li > a{
-	color: black;
-}
 /***************************
 	FOOTER
 	************************/
@@ -118,17 +67,32 @@ html, body {
 
 }
  
- /******************************************************************************************************************/
+ /******************************************************************************************22222222222222******/
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
 
-html, body {
-				height: 70%;
-				padding-top: 40px;    }
+html, body {	padding: 1.01em; 
+				height: 70%;    }
+
+.marginButtons {  margin: 7px; }
+
+.btn-resize {
+    padding: 12px 22px;
+    font-size: 28px; 
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+
 
 /***************************
 	CAROUSEL
 	************************/
+.carousel-title{ font-weight: bold;	font-size: 250% !important;}
+.carousel-subtitle{	 font-size: 150% !important;}
+
 .carousel,
 .item,
 .active {
@@ -146,37 +110,6 @@ html, body {
 	background-size: cover;
 }
 
-/***************************
-	NAVBAR
-************************/
-.navbar{
-	padding: 5px 0 0 5px;
-	height: 90px;
-	background: rgba(195, 224, 255, 0.0);
-	/* Aqui colocamos la transicion para cada navegador */
-    -webkit-transition:all 1s ease-in;  /* Chrome y Safari */
-    -o-transition:all 1s ease-in;  /* Opera */
-    -moz-transition:all 1s ease-in;  /* Mozilla Firefox */
-    -ms-transition:all 1s ease-in;   /* Internet Explorer */
-    transition:all 1s ease-in;  /* W3C */
-}
-
-.navbar.navbar-sticky-scroll {
-	-webkit-transition:all 1s ease-out;  /* Chrome y Safari */
-    -o-transition:all 1s ease-out;  /* Opera */
-    -moz-transition:all 1s ease-out;  /* Mozilla Firefox */
-    -ms-transition:all 1s ease-out;   /* Internet Explorer */
-    transition:all 1s ease-out;  /* W3C */
-
-    background: rgba(195, 224, 255, 0.8);
-    border-bottom: 1px solid #ffffff; 
-    height: 70px;
-    font-size: 14px;
-}
-
-.navbar .nav > li > a{
-	color: black;
-}
 /***************************
 	FOOTER
 	************************/
@@ -194,18 +127,25 @@ html, body {
 
 }
  
- /******************************************************************************************************************/
+ /*****************************************************************************************33333333333333333333*********/
 /* Landscape phones and down */
 @media (max-width: 480px) { 
 
 html, body {	padding: 1.01em; 
-				height: 65%;
-				padding-top: 40px;   }
+				height: 65%;    }
 
-
+.btn-resize {
+    padding: 8px 18px;
+    font-size: 24px; 
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
 /***************************
 	CAROUSEL
 	************************/
+
 .carousel,
 .item,
 .active {
@@ -223,38 +163,6 @@ html, body {	padding: 1.01em;
 	background-size: cover;
 }
 
-.navbar{
-	padding: 5px 0 0 5px;
-	height: 90px;
-	background: rgba(195, 224, 255, 0.0);
-	/* Aqui colocamos la transicion para cada navegador */
-    -webkit-transition:all 1s ease-in;  /* Chrome y Safari */
-    -o-transition:all 1s ease-in;  /* Opera */
-    -moz-transition:all 1s ease-in;  /* Mozilla Firefox */
-    -ms-transition:all 1s ease-in;   /* Internet Explorer */
-    transition:all 1s ease-in;  /* W3C */
-  
-}
-.navbar.navbar-sticky-scroll {
-	-webkit-transition:all 1s ease-out;  /* Chrome y Safari */
-    -o-transition:all 1s ease-out;  /* Opera */
-    -moz-transition:all 1s ease-out;  /* Mozilla Firefox */
-    -ms-transition:all 1s ease-out;   /* Internet Explorer */
-    transition:all 1s ease-out;  /* W3C */
-
-    background: rgba(195, 224, 255, 0.8);
-    border-bottom: 1px solid #ffffff; 
-    height: 70px;
-    font-size: 14px;
-}
-   
-.navbar .navbar-toggle {
-	background-color: white;
-}
-
-.navbar .nav > li > a{
-	color: black;
-}
 /***************************
 	FOOTER
 	************************/

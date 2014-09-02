@@ -1,0 +1,94 @@
+
+@blue-color-primary: #144187;
+@orange-color-primary: #E26334;
+
+/***************************
+    NAVBAR
+************************/
+.navbar{
+    padding: 15px;
+    padding-top: 15px;
+    height: 110px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.0);
+    border-bottom: 0px solid #ffffff; 
+}
+
+.navbar-up {
+
+    padding: 15px;
+    height: 110px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.0);
+    
+    -webkit-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    -ms-transition:all 1s ease-out;
+    transition:all 1s ease-outs;
+
+}
+
+.navbar-down {
+    height: 70px;
+    font-size: 14px;
+    padding: 15px;
+    padding-top: 0px;
+    background-color: rgba(232,165,78,0.9);
+    border-bottom: 0px solid #ffffff; 
+
+
+        -webkit-transition:all 1s ease-out;
+        -o-transition:all 1s ease-out;
+        -moz-transition:all 1s ease-out;
+        -ms-transition:all 1s ease-out;
+        transition:all 1s ease-outs;
+}
+
+.navbar-menu-toggle {
+    display: block !important;
+}
+.navbar-menu-toggle ul {
+  
+    position: relative;
+    list-style: none;
+    float: right;
+}
+
+.navbar-menu-toggle ul li {
+    display: inline;
+    text-align: center;
+}
+
+.navbar-menu-toggle ul li a{
+    color: @blue-color-primary;
+    text-decoration: none;
+    font-weight:bold;
+
+    padding: 25px 9px 25px 9px;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.navbar-menu-toggle ul li a:hover{
+    color: @orange-color-primary;
+}
+
+.complete-menu {
+    width: 100%;
+    position: absolute;
+    line-height: 60px;
+    padding-right: 30px;
+}
+
+.navbar-logo {
+    position: relative;
+    float: left;
+    padding-left: 10px;
+}
+
+.navbar-button-toggle {
+    display: none;
+}
+

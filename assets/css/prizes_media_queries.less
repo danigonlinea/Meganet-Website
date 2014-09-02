@@ -1,4 +1,8 @@
 /* Large desktop is defined in general.css*/
+@blue-color-primary: #023C88;
+@blue-color-secondary: #0356C2;
+@orange-color-primary: #EF4E20;
+
  /******************************************************************************************************************/
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 1099px) {
@@ -7,66 +11,71 @@ html, body {
 				height: 75%; 
 				padding-top: 60px;    }
 
-
 .text-center-only {	text-align: center;	}
-
 .enterprise-container {	width: 100%;  padding: 1.2em;}
+.marginBottom {  margin-bottom: 1.1em;}
 
-/*** ICONOS, TITLE Y SUBTITULO ***/
+
+ span {
+	font-size: 16px;
+	color: white;
+}
+
+h1 {font-size:44px;}
+h2 {font-size:22px;}
+
+/******************************
+	DESCUENTOS
+*******************************/
+
 .min-height-box{
 	height: 200px;
+	text-align: center;
 }
+
+
+.certificate_icon_container {
+	text-align: center;
+}
+
+
+.certificate-icon-box{
+	height: 150px;
+	width: 150px;
+
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+/******************************
+	PANEL DE RESALTE DE MENSAJE
+*******************************/
+.well-primary {
+	background: rgba(2, 60, 136, 0.9);
+	border-color: @blue-color-secondary;
+	color: white;
+}
+
+/*** ICONOS, TITLE Y SUBTITULO ***/
+.min-height-box{	height: 200px; }
+.modal {    overflow-y: auto; }
 
 /***************************
 	NAVBAR
 ************************/
-.navbar{
-	padding: 5px 0 0 5px;
-	height: 90px;
-	background: rgba(195, 224, 255, 0.0);
-	/* Aqui colocamos la transicion para cada navegador */
-    -webkit-transition:all 1s ease-in;  /* Chrome y Safari */
-    -o-transition:all 1s ease-in;  /* Opera */
-    -moz-transition:all 1s ease-in;  /* Mozilla Firefox */
-    -ms-transition:all 1s ease-in;   /* Internet Explorer */
-    transition:all 1s ease-in;  /* W3C */
-  
-}
-.navbar.navbar-sticky-scroll {
-	-webkit-transition:all 1s ease-out;  /* Chrome y Safari */
-    -o-transition:all 1s ease-out;  /* Opera */
-    -moz-transition:all 1s ease-out;  /* Mozilla Firefox */
-    -ms-transition:all 1s ease-out;   /* Internet Explorer */
-    transition:all 1s ease-out;  /* W3C */
+@import url("NavBar/__main_menu.less");
 
-    background: rgba(195, 224, 255, 0.8);
-    border-bottom: 1px solid #ffffff; 
-    height: 70px;
-    font-size: 14px;
-}
-   
-.navbar .navbar-toggle {
-	background-color: white;
-}
+/***************************
+	BUTTON CAROUSEL ORANGE LINKS
+************************/
+@import url("__button_orange.less");
 
-.navbar .nav > li > a{
-	color: black;
-}
 
 /***************************
 	FOOTER
-	************************/
-.row-footer
-{
-	height: 34em;
-	padding: 2.5em;
-	background-color: #C5C0C0;
-	font-family: Tahoma;/*'Palatino Linotype',Tahoma, 'Lucida Sans Unicode',Georgia, sans-serif;*/
-	font-size: 1.5em;
-}
-
-.footer-contact {	padding-top: 1.2em;}
-.footer-address {	padding-bottom: 1.2em;}
+************************/
+@import url("footer/__footer.less");
 
 }
  
@@ -78,64 +87,185 @@ html, body {
 				height: 70%;  
 				padding-top: 40px;   }
 
+ span {
+	font-size: 16px;
+	color: white;
+}
 
-/*** ICONOS, TITLE Y SUBTITULO ***/
+h1 {font-size:44px;}
+h2 {font-size:22px;}
+
+/******************************
+	DESCUENTOS
+*******************************/
+
 .min-height-box{
 	height: 200px;
+	text-align: center;
 }
 
 
-/***************************
-	NAVBAR
+.certificate_icon_container {
+	text-align: center;
+}
+
+
+.certificate-icon-box{
+	height: 150px;
+	width: 150px;
+
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+/******************************
+	PANEL DE RESALTE DE MENSAJE
+*******************************/
+.well-primary {
+	background: rgba(2, 60, 136, 0.9);
+	border-color: @blue-color-secondary;
+	color: white;
+}
+
+/*** ICONOS, TITLE Y SUBTITULO ***/
+.min-height-box{	height: 200px; }
+
+/************************
+    NAVBAR
 ************************/
 .navbar{
-	padding: 5px 0 0 5px;
-	height: 90px;
-	background: rgba(195, 224, 255, 0.0);
-	/* Aqui colocamos la transicion para cada navegador */
-    -webkit-transition:all 1s ease-in;  /* Chrome y Safari */
-    -o-transition:all 1s ease-in;  /* Opera */
-    -moz-transition:all 1s ease-in;  /* Mozilla Firefox */
-    -ms-transition:all 1s ease-in;   /* Internet Explorer */
-    transition:all 1s ease-in;  /* W3C */
-  
+    padding: 15px;
+    height: 110px;
+    font-size: 14px;
+    padding-top: 15px;
+    background: rgba(255, 255, 255, 0.0);
+    border-bottom: 0px solid #ffffff; 
 }
-.navbar.navbar-sticky-scroll {
-	-webkit-transition:all 1s ease-out;  /* Chrome y Safari */
-    -o-transition:all 1s ease-out;  /* Opera */
-    -moz-transition:all 1s ease-out;  /* Mozilla Firefox */
-    -ms-transition:all 1s ease-out;   /* Internet Explorer */
-    transition:all 1s ease-out;  /* W3C */
 
-    background: rgba(195, 224, 255, 0.8);
-    border-bottom: 1px solid #ffffff; 
+.navbar-up {
+    padding: 15px;
+    height: 110px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.0);
+    
+    -webkit-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    -ms-transition:all 1s ease-out;
+    transition:all 0s ease-outs;
+}
+
+.navbar-down {
     height: 70px;
     font-size: 14px;
-}
-   
-.navbar .navbar-toggle {
-	background-color: white;
+    padding: 15px;
+    padding-top: 0px;
+    background-color: rgba(232,165,78,0.7);
+    border-bottom: 0px solid #ffffff; 
+
+    -webkit-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    -ms-transition:all 1s ease-out;
+    transition:all 1s ease-outs;
 }
 
-.navbar .nav > li > a{
-	color: black;
+.navbar-menu-toggle {
+    display: none;
+    width: 100%;
+
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear;
 }
+
+.navbar-menu-toggle ul {
+    position: relative;
+    list-style: none;
+    text-decoration:none;
+    float: right;
+    clear: both;
+    background-color: @blue-color-primary;
+    border: 5px solid @orange-color-primary;
+    border-radius: 25px;
+    padding-right: 40px;
+}
+
+.navbar-menu-toggle ul li {
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.navbar-menu-toggle ul li a{
+    color: white;
+    text-decoration: none;
+
+    padding: 25px 30px 25px 30px;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.navbar-menu-toggle ul li a:hover{
+    color: @orange-color-primary;
+}
+
+.complete-menu {
+    width: 100%;
+    position: absolute;
+    line-height: 60px;
+}
+
+.navbar-logo {
+    position: relative;
+      float: left;
+}
+
+
+.navbar-button-toggle {
+    visibility: visible;
+    position: relative;
+    margin-right: 40px;
+    background:none;
+    border:none; 
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+}
+
 
 /***************************
-	FOOTER
-	************************/
-.row-footer
+FOOTER
+************************/
+.footer-social-icons
 {
-	height: 38em;
+	height: 8em;
 	padding: 2em;
-	background-color: #C5C0C0;
-	font-family: Tahoma;/*'Palatino Linotype',Tahoma, 'Lucida Sans Unicode',Georgia, sans-serif;*/
-	font-size: 1.4em;
+	vertical-align:middle;
+
+
 }
 
-.footer-contact{	padding-top: 1.2em;}
-.footer-address{	padding-bottom: 1.2em;}
+.footer-contact
+{
+	height: 8em;
+	text-align: right;
+}
 
+.row-footer
+{
+	height: 27em;
+	padding: 1.1em;
+	background-color:@blue-color-primary;
+	font-family: Tahoma;/*'Palatino Linotype',Tahoma, 'Lucida Sans Unicode',Georgia, sans-serif;*/
+	font-size: 1.5em;
+}
+
+div span a:hover {
+	color: @orange-color-primary;
+    text-decoration: none;
+}			
 }
  
  /******************************************************************************************************************/
@@ -147,60 +277,187 @@ html, body {
 				padding-top: 40px;  }
 
 /*** ICONOS, TITLE Y SUBTITULO ***/
+ span {
+	font-size: 16px;
+	color: white;
+}
+
+h1 {font-size:44px;}
+h2 {font-size:22px;}
+
+/******************************
+	DESCUENTOS
+*******************************/
+
 .min-height-box{
 	height: 200px;
+	text-align: center;
 }
 
 
-/***************************
-	NAVBAR
+.certificate_icon_container {
+	text-align: center;
+}
+
+
+.certificate-icon-box{
+	height: 150px;
+	width: 150px;
+
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+/******************************
+	PANEL DE RESALTE DE MENSAJE
+*******************************/
+.well-primary {
+	background: rgba(2, 60, 136, 0.9);
+	border-color: @blue-color-secondary;
+	color: white;
+}
+
+/*** ICONOS, TITLE Y SUBTITULO ***/
+.min-height-box{	height: 200px; }
+
+
+/************************
+    NAVBAR
 ************************/
 .navbar{
-	padding: 5px 0 0 5px;
-	height: 90px;
-	background: rgba(195, 224, 255, 0.0);
-	/* Aqui colocamos la transicion para cada navegador */
-    -webkit-transition:all 1s ease-in;  /* Chrome y Safari */
-    -o-transition:all 1s ease-in;  /* Opera */
-    -moz-transition:all 1s ease-in;  /* Mozilla Firefox */
-    -ms-transition:all 1s ease-in;   /* Internet Explorer */
-    transition:all 1s ease-in;  /* W3C */
-  
+    padding: 15px;
+    height: 110px;
+    font-size: 14px;
+    padding-top: 15px;
+    background: rgba(255, 255, 255, 0.0);
+    border-bottom: 0px solid #ffffff; 
 }
-.navbar.navbar-sticky-scroll {
-	-webkit-transition:all 1s ease-out;  /* Chrome y Safari */
-    -o-transition:all 1s ease-out;  /* Opera */
-    -moz-transition:all 1s ease-out;  /* Mozilla Firefox */
-    -ms-transition:all 1s ease-out;   /* Internet Explorer */
-    transition:all 1s ease-out;  /* W3C */
 
-    background: rgba(195, 224, 255, 0.8);
-    border-bottom: 1px solid #ffffff; 
+.navbar-up {
+    padding: 15px;
+    height: 110px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.0);
+    
+    -webkit-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    -ms-transition:all 1s ease-out;
+    transition:all 0s ease-outs;
+}
+
+.navbar-down {
     height: 70px;
     font-size: 14px;
-}
-   
-.navbar .navbar-toggle {
-	background-color: white;
+    padding: 15px;
+    padding-top: 0px;
+    background-color: rgba(232,165,78,0.7);
+    border-bottom: 0px solid #ffffff; 
+
+    -webkit-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    -ms-transition:all 1s ease-out;
+    transition:all 1s ease-outs;
 }
 
-.navbar .nav > li > a{
-	color: black;
+.navbar-menu-toggle {
+    display: none;
+    width: 100%;
+
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear;
 }
+
+.navbar-menu-toggle ul {
+    position: relative;
+    list-style: none;
+    text-decoration:none;
+    float: right;
+    clear: both;
+    background-color: @blue-color-primary;
+    border: 5px solid @orange-color-primary;
+    border-radius: 25px;
+    padding-right: 40px;
+}
+
+.navbar-menu-toggle ul li {
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.navbar-menu-toggle ul li a{
+    color: white;
+    text-decoration: none;
+
+    padding: 25px 30px 25px 30px;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.navbar-menu-toggle ul li a:hover{
+    color: @orange-color-primary;
+}
+
+.complete-menu {
+    width: 100%;
+    position: absolute;
+    line-height: 60px;
+}
+
+.navbar-logo {
+    position: relative;
+      float: left;
+}
+
+
+.navbar-button-toggle {
+    visibility: visible;
+    position: relative;
+    margin-right: 40px;
+    background:none;
+    border:none; 
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+
 
 /***************************
 	FOOTER
 	************************/
-.row-footer
+.footer-social-icons
 {
-	height: 38em;
-	background-color: #C5C0C0;
-	padding: 1.5em;
-	font-family: Tahoma;/*'Palatino Linotype',Tahoma, 'Lucida Sans Unicode',Georgia, sans-serif;*/
-	font-size: 1.2em;
+	height: 8em;
+	padding: 2em;
+	vertical-align:middle;
+
+
 }
 
-.footer-contact{	padding-top: 1.2em;}
-.footer-address{	padding-bottom: 1.2em;}
+.footer-contact
+{
+	height: 8em;
+	text-align: right;
+}
+
+.row-footer
+{
+	height: 27em;
+	padding: 1.1em;
+	background-color:@blue-color-primary;
+	font-family: Tahoma;/*'Palatino Linotype',Tahoma, 'Lucida Sans Unicode',Georgia, sans-serif;*/
+	font-size: 1.5em;
+}
+
+div span a:hover {
+	color: @orange-color-primary;
+    text-decoration: none;
+}
+
 
 }

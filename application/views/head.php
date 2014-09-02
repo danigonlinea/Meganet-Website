@@ -15,5 +15,5 @@ y soluciones a todo tipo de problemas."/>
 
 	<title>Bienvenido a Meganet</title>
 
-	<link href="/MeganetLocalWEB/assets/libraries/bootstrap311/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/MeganetLocalWEB/assets/libraries/bootstrap311/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="<?php echo base_url("/assets/libraries/bootstrap311/css/bootstrap.min.css"); ?>" rel="stylesheet">
+    <link href="<?php echo base_url("/assets/libraries/bootstrap311/css/bootstrap-theme.min.css"); ?>" rel="stylesheet">

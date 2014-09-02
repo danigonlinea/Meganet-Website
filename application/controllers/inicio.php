@@ -9,3 +9,5 @@ class Inicio extends CI_Controller {
 		$this->load->view('index.php');
 	}
 }
+
+?>

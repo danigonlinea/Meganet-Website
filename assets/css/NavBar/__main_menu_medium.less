@@ -1,0 +1,103 @@
+@blue-color-primary: #144187;
+@orange-color-primary: #E26334;
+
+/************************
+    NAVBAR
+************************/
+.navbar{
+    padding: 15px;
+    height: 110px;
+    font-size: 14px;
+    padding-top: 15px;
+    background: rgba(255, 255, 255, 0.0);
+    border-bottom: 1px solid #ffffff; 
+}
+
+.navbar-up {
+    padding: 15px;
+    height: 110px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.0);
+    
+    -webkit-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    -ms-transition:all 1s ease-out;
+    transition:all 1s ease-outs;
+}
+
+.navbar-down {
+    height: 80px;
+    font-size: 14px;
+    padding: 15px;
+    padding-top: 0px;
+    background-color: rgba(232,165,78,0.7);
+    border-bottom: 1px solid #ffffff; 
+
+    -webkit-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    -ms-transition:all 1s ease-out;
+    transition:all 1s ease-outs;
+}
+
+.navbar-menu-toggle {
+    visibility: hidden;
+    width: 100%;
+
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.navbar-menu-toggle ul {
+    position: relative;
+    list-style: none;
+    text-decoration:none;
+    float: right;
+    clear: both;
+    background-color: @blue-color-primary;
+    padding-right: 40px;
+}
+
+.navbar-menu-toggle ul li {
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.navbar-menu-toggle ul li a{
+    color: white;
+    text-decoration: none;
+
+    padding: 25px 30px 25px 30px;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.navbar-menu-toggle ul li a:hover{
+    color: @orange-color-primary;
+}
+
+.complete-menu {
+    width: 100%;
+    position: absolute;
+    line-height: 60px;
+}
+
+.navbar-logo {
+    position: relative;
+      float: left;
+}
+
+
+.navbar-button-toggle {
+    visibility: visible;
+    position: relative;
+    margin-right: 40px;
+    background:none;
+    border:none; 
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+}

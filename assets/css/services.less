@@ -1,56 +1,80 @@
 @media (min-width: 1100px) {
 
-html, body {	padding: 1.1em; 
-				height: 85%;
-				padding-top: 60px;   }
+
+html, body {    padding: 1.1em; 
+                height: 85%;
+                padding-top: 60px;     }
+
+ span {
+    font-size: 16px;
+    color: white;
+}
+
+h1, .jumbotron h1, .carousel-caption h1 {font-size:44px;}
+h2, .jumbotron h2, .carousel-caption h2 {font-size:22px;}
+h3{font-size:20px;}
+h4{font-size:18px;}
+h5{font-size:16px;}
+h6{font-size:14px;}
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+}
+
+.jumbotron {
+    background: url('../imgs/general/services.jpg') no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 450px;
+    text-align: justify;
+}
 
 
-.text-center-only {	text-align: center;	}
+.jumbotron h1, .carousel-caption h1 {
+    color: white;
+}
+.jumbotron h2, .carousel-caption h2 {
+    color: white;
+}
 
-.enterprise-container {	width: 100%;  padding: 1.2em;}
+.text-center-only { text-align: center; }
+
+.enterprise-container { width: 100%;  padding: 1.2em;}
 .marginButtons {  margin: 10px; }
 
-.btn-resize {
-    padding: 18px 28px;
-    font-size: 35px; 
-    line-height: normal;
-    -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-            border-radius: 8px;
+.bold {
+    font-weight: bold;
+}
+
+
+div > p {
+	text-align: center;
 }
 
 
 /***************************
 	NAVBAR
 ************************/
-@import url("__main_menu.less");
+@import url("NavBar/__main_menu.less");
 
 /***************************
-	CAROUSEL
-	************************/
-.carousel-title{ font-weight: bold; }
+    BUTTON ORANGE LINKS
+************************/
+@import url("__button_orange.less");
 
-.carousel,
-.item,
-.active {
-	height:100%;
-}
-
-.carousel-inner {
-	height:100%;
-}
-
-.fill {
-	width:100%;
-	height:100%;
-	background-position: center;
-	background-size: cover;
-}
-
+/***************************
+    CAROUSEL
+************************/
+@import url("__carousel.less");
 
 /***************************
 	FOOTER
 ************************/
-@import url("__footer.less");
+@import url("footer/__footer.less");
+
+
 
 }

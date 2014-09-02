@@ -1,54 +1,93 @@
-@media (min-width: 1100px) {
+@blue-color-primary: #023C88;
+@blue-color-secondary: #0356C2;
+@orange-color-primary: #EF4E20;
+
+@media (min-width: 1100px) 
+{
 
 html, body {	padding: 1.1em; 
 				height: 85%;
 				padding-top: 60px;	}
 
+p, span {
+	font-size: 16px;
+	color: white;
+}
+
+h1{font-size:44px;}
+h2{font-size:22px;}
+h3{font-size:18px;}
+
+
 
 .text-center-only {	text-align: center;	}
-
 .enterprise-container {	width: 100%;  padding: 1.2em;}
 .marginBottom {  margin: 1.5em;}
 
-.btn-xlarge {
-    padding: 18px 28px;
-    font-size: 25px; 
-    line-height: normal;
-    -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-            border-radius: 8px;
+
+/******************************
+  PANEL DE RESALTE DE MENSAJE
+*******************************/
+.well-primary {
+  background: rgba(2, 60, 136, 0.9);
+  border-color: @blue-color-secondary;
+  color: white;
+  margin-top: 20px;
+}
+
+/**********************
+    BRANDS ANIMATIONS 
+ *********************/
+.brand-link {
+	display: block;
+}
+
+
+/*
+.image-toggle-container {
+	position:relative;
+  	margin:0 auto;
+}
+
+.image-toggle-container img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.image-toggle-container img.top-image-toggle-container:hover {
+  opacity:0;
+}*/
+
+/* SOCIAL NETWORKS */
+
+
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
 }
 
 /***************************
-	NAVBAR
+	BUTTON CAROUSEL ORANGE LINKS
 ************************/
-@import url("__main_menu.less");
-
+@import url("__button_orange.less");
 
 /***************************
 	CAROUSEL
 ************************/
-.carousel,
-.item,
-.active {
-	height:100%;
-}
+@import url("__carousel.less");
 
-.carousel-inner {
-	height:100%;
-}
-
-.fill {
-	width:100%;
-	height:100%;
-	background-position: center;
-	background-size: cover;
-}
-
-
+/***************************
+	NAVBAR
+************************/
+@import url("NavBar/__main_menu.less");
 
 /***************************
 	FOOTER
 ************************/
-@import url("__footer.less");
+@import url("footer/__footer.less");
 }
